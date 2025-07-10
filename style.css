@@ -91,3 +91,19 @@ blockquote {
     max-height: 60px;
   }
 }
+
+.whatsapp-btn a {
+  display: inline-block;
+  background-color: #25d366;
+  color: white;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 6px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.whatsapp-btn a:hover {
+  background-color: #1ebe57;
+}
+
