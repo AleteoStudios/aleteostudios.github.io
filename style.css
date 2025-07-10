@@ -107,3 +107,40 @@ blockquote {
   background-color: #1ebe57;
 }
 
+#videos {
+  padding: 2rem;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+#videos h2 {
+  color: #c62828;
+  margin-bottom: 1rem;
+}
+
+.video-carousel {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  scroll-snap-type: x mandatory;
+  padding: 1rem 0;
+}
+
+.video-carousel iframe {
+  min-width: 320px;
+  height: 180px;
+  border-radius: 8px;
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  border: 2px solid #ccc;
+  background: #000;
+}
+
+/* Responsive ajuste */
+@media (min-width: 768px) {
+  .video-carousel iframe {
+    min-width: 480px;
+    height: 270px;
+  }
+}
+
