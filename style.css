@@ -6,21 +6,31 @@ body {
   color: #333;
 }
 header {
+  background-color: white;
+  padding: 1rem 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.header-content {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 20px;
-  background-color: #c62828;
-  padding: 1rem;
-  color: white;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
 }
 .logo {
   height: 50px;
+}
+nav {
+  background: linear-gradient(90deg, #b71c1c, #e53935);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
 }
 nav a {
   color: white;
   margin: 0 10px;
   text-decoration: none;
+  font-weight: bold;
 }
 main {
   padding: 2rem;
