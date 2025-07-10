@@ -1,34 +1,25 @@
-
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
   background-color: white;
   color: #333;
 }
-header {
+.header-logo-only {
   background-color: white;
-  padding: 1rem 0;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-.header-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 2rem;
+  text-align: center;
+  padding: 1rem;
 }
 .logo {
-  height: 50px;
+  height: 60px;
 }
-nav {
+.main-nav {
   background: linear-gradient(90deg, #b71c1c, #e53935);
-  padding: 0.5rem 1rem;
-  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  text-align: center;
 }
-nav a {
+.main-nav a {
   color: white;
-  margin: 0 10px;
+  margin: 0 15px;
   text-decoration: none;
   font-weight: bold;
 }
