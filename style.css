@@ -144,3 +144,41 @@ blockquote {
   }
 }
 
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #c62828; /* Rojo principal */
+  text-decoration: none;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.social-icons svg {
+  width: 20px;
+  height: 20px;
+  fill: white;
+}
+
+.social-icons a:hover {
+  transform: scale(1.1);
+  background-color: #a21919; /* Rojo más oscuro al pasar el mouse */
+}
