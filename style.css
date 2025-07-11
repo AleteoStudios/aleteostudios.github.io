@@ -10,29 +10,55 @@ body {
   background-color: white;
   text-align: center;
   padding: 1rem;
+  position: relative;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
+
 
 .logo {
   height: 60px;
   max-width: 90%;
 }
 
+.menu-toggle {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none;
+  color: #c62828;
+}
+
 .main-nav {
+  display: flex;
+  justify-content: center;
   background: linear-gradient(90deg, #b71c1c, #e53935);
-  padding: 0.75rem 1rem;
-  text-align: center;
+  padding: 1rem;
   flex-wrap: wrap;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
 
 .main-nav a {
+  background-color: #c62828;
   color: white;
-  margin: 0 15px;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 6px;
   text-decoration: none;
   font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
   display: inline-block;
-  padding: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
+
+.main-nav a:hover {
+  background-color: #a21919;
+  transform: translateY(-2px);
+}
 main {
   padding: 2rem;
   max-width: 1000px;
@@ -42,7 +68,12 @@ main {
 section {
   margin-bottom: 2rem;
   text-align: justify;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  padding: 1rem;
+  border-radius: 8px;
+  background: #fff;
 }
+
 
 h2 {
   color: #c62828;
@@ -61,7 +92,9 @@ footer {
   text-align: center;
   padding: 1rem;
   color: #666;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
 }
+
 
 blockquote {
   font-style: italic;
@@ -73,10 +106,26 @@ blockquote {
 
 /* Responsive */
 @media (max-width: 768px) {
-  .main-nav a {
+  .menu-toggle {
     display: block;
-    margin: 10px 0;
   }
+
+  .main-nav {
+    flex-direction: column;
+    align-items: center;
+    display: none;
+  }
+
+  .main-nav.nav-open {
+    display: flex;
+  }
+
+  .main-nav a {
+    width: 90%;
+    text-align: center;
+  }
+}
+
 
   main {
     padding: 1rem;
@@ -106,7 +155,9 @@ blockquote {
 .whatsapp-btn a:hover {
   background-color: #1ebe57;
 }
-
+.contact-form {
+  margin-top: 20px;
+}
 #videos {
   padding: 2rem;
   background-color: #f9f9f9;
