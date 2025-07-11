@@ -86,9 +86,9 @@
 </div>
       <p>Email: <a href="mailto:aleteostudios@gmail.com">aleteostudios@gmail.com</a></p>
       
-<div class="contact-form">
+<div class="form-wrapper">
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfxmqMGLKKEktf7mlNT4GbIhwdPqKdQR-Et6TuavCPc7TXX2w/viewform?embedded=true" width="640" height="1155" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
-
+</div>
 
      <div class="social-icons">
   <a href="https://www.facebook.com/profile.php?id=100095733572561" class="facebook" target="_blank" aria-label="Facebook">
@@ -110,13 +110,19 @@
     <p>&copy; 2025 Aleteo Studios. Todos los derechos reservados.</p>
   </footer>
 
-  <script>
+ <script>
+  document.addEventListener("DOMContentLoaded", function () {
     const toggle = document.querySelector(".menu-toggle");
     const nav = document.querySelector(".main-nav");
-    toggle.addEventListener("click", () => {
-      nav.classList.toggle("nav-open");
-    });
-  </script>
+
+    if (toggle && nav) {
+      toggle.addEventListener("click", () => {
+        nav.classList.toggle("nav-open");
+      });
+    }
+  });
+</script>
+
 
 </body>
 </html>
