@@ -105,6 +105,7 @@ blockquote {
 }
 
 /* Responsive */
+
 @media (max-width: 768px) {
   .menu-toggle {
     display: block;
@@ -114,6 +115,13 @@ blockquote {
     flex-direction: column;
     align-items: center;
     display: none;
+    position: fixed;
+    top: 80px; /* justo debajo del header fijo */
+    left: 0;
+    width: 100%;
+    background: linear-gradient(90deg, #b71c1c, #e53935);
+    z-index: 999;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
   }
 
   .main-nav.nav-open {
@@ -121,10 +129,11 @@ blockquote {
   }
 
   .main-nav a {
-    width: 90%;
+    width: 100%;
     text-align: center;
   }
 }
+
 
 
   main {
@@ -188,6 +197,7 @@ blockquote {
 }
 
 /* Responsive ajuste */
+
 @media (min-width: 768px) {
   .video-carousel iframe {
     min-width: 480px;
@@ -249,3 +259,48 @@ blockquote {
   height: 100%;
   border: none;
 }
+
+.site-header-fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: white;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  height: 60px;
+  max-width: 90%;
+}
+
+/* Espacio para que el header no tape contenido */
+body {
+  padding-top: 80px;
+}
+
+/* Botón flotante para volver al inicio */
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #c62828;
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  line-height: 48px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  transition: background-color 0.3s ease;
+  z-index: 999;
+}
+
+.back-to-top:hover {
+  background-color: #a21919;
+}
+
