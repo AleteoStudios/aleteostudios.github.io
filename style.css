@@ -211,21 +211,28 @@ blockquote {
   }
 }
 
+/* Centrado de los íconos de redes sociales */
 .social-icons {
   display: flex;
-  justify-content: center;
-  gap: 1.5rem; /* Espaciado entre íconos */
+  justify-content: center;  /* Centra los íconos horizontalmente */
+  align-items: center;      /* Centra los íconos verticalmente */
+  gap: 1rem;                /* Espaciado entre los íconos */
+  margin: 0 auto;           /* Centra el contenedor de los íconos */
 }
 
+/* Estilos de los íconos */
 .social-icon {
-  width: 2.5rem; /* Tamaño relativo */
-  height: 2.5rem; /* Tamaño relativo */
+  width: 30px;  /* Tamaño de los íconos */
+  height: 30px; /* Tamaño de los íconos */
+  max-width: 40px; /* Limita el tamaño máximo */
+  max-height: 40px; /* Limita el tamaño máximo */
   transition: transform 0.3s ease-in-out;
 }
 
+/* Efecto visual al pasar el cursor sobre los íconos */
 .social-icon:hover {
-  transform: scale(1.1); /* Efecto al pasar el cursor */
-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+  transform: scale(1.1);  /* Aumenta el tamaño ligeramente */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra sutil */
 }
 
 .form-wrapper {
@@ -301,4 +308,20 @@ body {
 
 .whatsapp-btn a:hover {
   background-color: #1ebe57;
+}
+
+
+@media (max-width: 768px) {
+  .social-icon {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+/* Asegurar que el contenedor de los íconos esté centrado en pantallas grandes */
+@media (min-width: 769px) {
+  .social-icon {
+    width: 30px;
+    height: 30px;
+  }
 }
