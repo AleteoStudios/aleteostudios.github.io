@@ -213,42 +213,22 @@ blockquote {
 
 .social-icons {
   display: flex;
-  justify-content: center;
-  gap: 15px;
-  margin-top: 1rem;
-  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;  /* Centra los íconos horizontalmente */
+  align-items: center;      /* Centra los íconos verticalmente */
+  margin: 0 auto;           /* Asegura que el contenedor esté centrado si es necesario */
 }
 
-.social-icons {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  margin-top: 1rem;
-  flex-wrap: wrap;
+.social-icon {
+  width: 40px;  /* Tamaño de los íconos */
+  height: 40px;  /* Tamaño de los íconos */
+  transition: transform 0.3s ease-in-out;
 }
 
-.social-icons a {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-  background-color: #c62828; /* Rojo principal */
-  text-decoration: none;
-  transition: transform 0.2s ease, background-color 0.3s ease;
+.social-icon:hover {
+  transform: scale(1.1);  /* Efecto al pasar el cursor */
 }
 
-.social-icons svg {
-  width: 20px;
-  height: 20px;
-  fill: white;
-}
-
-.social-icons a:hover {
-  transform: scale(1.1);
-  background-color: #a21919; /* Rojo mÃ¡s oscuro al pasar el mouse */
-}
 
 .form-wrapper {
   position: relative;
